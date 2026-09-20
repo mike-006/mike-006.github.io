@@ -1,0 +1,29 @@
+# 只保留网站本体：index.html / styles.css / app.js / avatar.png / resume PDF / covers/
+
+# 本地视频原片（2.4GB，视频走腾讯云 COS）
+videos/
+
+# 部署产物与暂存目录
+deploy/
+deploy-lite/
+*.zip
+
+# 参考资料与临时脚本
+_ref/
+_tools/
+compress.ps1
+compress.log
+make-zip.ps1
+make-zip-lite.ps1
+server.ps1
+_pdf2img.ps1
+_crop.ps1
+_findpy.ps1
+test-half.js
+
+# 旧版脚本（已被 app.js 取代）
+script.js
+
+# 浏览器重复下载产生的副本
+*_1.*
+resume-site-lite/

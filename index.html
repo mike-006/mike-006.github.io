@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>姚泽兴 - 游戏买量视频 · 动画设计师作品集</title>
+    <link rel="stylesheet" href="styles.css?v=14">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+SC:wght@400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 加载动画 -->
+    <div id="loader">
+        <div class="loader-content">
+            <div class="loader-bar">
+                <div class="loader-progress"></div>
+            </div>
+            <p class="loader-text">正在加载作品集…</p>
+        </div>
+    </div>
+
+    <!-- 导航栏 -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <span class="logo-icon">◆</span>
+                <span class="logo-text">姚泽兴</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link active">首页</a></li>
+                <li><a href="#works" class="nav-link">作品展示</a></li>
+                <li><a href="#case" class="nav-link">案例分析</a></li>
+                <li><a href="#about" class="nav-link">关于我</a></li>
+                <li><a href="#skills" class="nav-link">专业技能</a></li>
+                <li><a href="#experience" class="nav-link">工作经历</a></li>
+                <li><a href="#contact" class="nav-link">联系我</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero 区域 -->
+    <section id="home" class="hero">
+        <div class="hero-bg">
+            <div class="grid-bg"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-left">
+                <div class="tag-line">
+                    <span class="tag-icon">▶</span>
+                    <span>GAME ADVERTISING VIDEO DESIGNER</span>
+                </div>
+                <h1 class="hero-title">
+                    <span class="title-line big-en">PORTFOLIO</span>
+                    <span class="title-line cn-sub">姚泽兴 · 游戏买量视频 / 动画设计师</span>
+                </h1>
+                <p class="hero-subtitle">
+                    你好，我是<strong>姚泽兴</strong>，视频设计 2+ 年，专注出海 SLG 手游买量广告制作。<br>
+                    熟练使用 Unity / AE / UE5 / Blender / Cocos，累计产出 77+ 条买量素材，多条爆款视频预估曝光超 1000 万。
+                </p>
+                <div class="hero-actions">
+                    <a href="#works" class="btn btn-primary">
+                        <span>查看作品</span>
+                        <span class="btn-arrow">→</span>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <span>联系合作</span>
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="77" data-suffix="+">0</div>
+                        <div class="stat-label">买量素材</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="4" data-suffix="+">0</div>
+                        <div class="stat-label">项目系列</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="2" data-suffix="+">0</div>
+                        <div class="stat-label">年经验</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="10000000" data-suffix="+">0</div>
+                        <div class="stat-label">爆款曝光</div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-right">
+                <div class="avatar-container">
+                    <div class="avatar-ring"></div>
+                    <div class="avatar-ring ring-2"></div>
+                    <div class="avatar-wrapper">
+                        <img src="avatar.png" alt="姚泽兴证件照" class="avatar">
+                    </div>
+                    <div class="floating-badge badge-1">
+                        <span class="badge-icon">🎬</span>
+                        <span>视频创作</span>
+                    </div>
+                    <div class="floating-badge badge-2">
+                        <span class="badge-icon">🤖</span>
+                        <span>AI 视频制作</span>
+                    </div>
+                    <div class="floating-badge badge-3">
+                        <span class="badge-icon">🎮</span>
+                        <span>Cocos 可玩广告</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>向下滚动</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- 作品展示（调到 hero 之后立刻出场，减少滚动距离） -->
+    <section id="works" class="section works">
+        <div class="section-header" data-en="WORKS">
+            <span class="section-num">01 / 作品展示</span>
+            <h2 class="section-title">作品<span class="highlight">展示</span></h2>
+            <div class="section-line"></div>
+        </div>
+
+        <!-- 筛选标签 -->
+        <div class="filter-tabs">
+            <button class="filter-btn" data-filter="all">全部作品</button>
+            <button class="filter-btn" data-filter="critter">Critter Colonies</button>
+            <button class="filter-btn" data-filter="kingdom">Kingdom Fall</button>
+            <button class="filter-btn" data-filter="mecha">Mecha Fire</button>
+            <button class="filter-btn" data-filter="p4">P4</button>
+            <button class="filter-btn" data-filter="virox">Virox Outbreak</button>
+            <button class="filter-btn active" data-filter="west">West Game Ⅱ</button>
+            <button class="filter-btn" data-filter="college">大学时期</button>
+            <button class="filter-btn" data-filter="playable">可玩广告</button>
+        </div>
+
+        <!-- 作品计数 -->
+        <p class="works-count">当前展示 <strong id="works-visible-count">0</strong> 个作品 · 点击卡片播放完整视频</p>
+
+        <!-- 视频作品网格（由 script.js 根据 videos 目录数据动态生成） -->
+        <div class="works-grid" id="works-grid"></div>
+
+        <!-- 分页控件 -->
+        <div class="pagination" id="pagination"></div>
+    </section>
+
+    <!-- 视频弹窗 -->
+    <div id="video-modal" class="modal">
+        <div class="modal-backdrop"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modal-close">×</button>
+            <div class="modal-video-wrap">
+                <video id="modal-video" controls poster="">
+                    <source src="" type="video/mp4">
+                </video>
+            </div>
+            <div class="modal-info">
+                <h3 id="modal-title">视频标题</h3>
+                <p id="modal-desc">视频描述信息...</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 案例分析（仿王晓洁模板板块） -->
+    <section id="case" class="section case">
+        <div class="case-banner">
+            <h2 class="case-banner-title">「案例分析」</h2>
+            <p class="case-banner-desc">
+                以 Mecha Fire「转刀」系列买量素材为例，完整呈现一条视频从需求对接、路线与节奏设计到引擎录制、剪辑合成的制作全流程。
+            </p>
+        </div>
+        <div class="case-body">
+            <div class="case-watermark">CASE STUDY</div>
+
+            <div class="case-panel active" data-case-panel="make">
+                <!-- 需求对接 -->
+                <h4 class="case-sec-title">需求对接</h4>
+                <div class="case-reqtext">
+                    <p><strong>需求：</strong>转刀玩法 + 虫群割草 + RPG 升级</p>
+                    <ul>
+                        <li><strong>画面：</strong>保留数据较好且偏休闲的简约美术，强化信息点（基地血量、虫群数量、刀级数字）</li>
+                        <li><strong>动画：</strong>保留打击爽感、新的打击动画、优化角色行动路线</li>
+                        <li><strong>剧情：</strong>危机解除难题紧接出现、关键剧情节点升级装备</li>
+                    </ul>
+                    <p>视频设计独立完成以下内容：发散思考、撰写完整创意脚本、除配音外的视频制作。</p>
+                </div>
+
+                <!-- 地图和行动路线 -->
+                <h4 class="case-sec-title">地图和行动路线</h4>
+                <figure class="case-widefig">
+                    <img src="covers/Mecha Fire/case-route.png" alt="地图和行动路线：四阶段递进示意">
+                    <figcaption>开局收虫升刀 → 规划投递路线 → 绕后收割金币 → 挑战大怪 BOSS（绿色数字为行动步序）</figcaption>
+                </figure>
+
+                <!-- 情绪节奏设计 -->
+                <h4 class="case-sec-title">情绪节奏设计</h4>
+                <figure class="case-widefig">
+                    <img src="covers/Mecha Fire/case-pressure.png" alt="爽感压力表：爽感与压力双曲线节奏设计">
+                    <figcaption>爽感压力表 —— 上柱为爽感（蓝）、下柱为压力（红），纵向分三档，横向 0–30s 时间轴</figcaption>
+                </figure>
+
+                <!-- 成品视频 -->
+                <h4 class="case-sec-title">成品视频</h4>
+                <div class="case-final">
+                    <div class="case-video-box">
+                        <video id="case-video" preload="none" playsinline
+                               poster="covers/Mecha Fire/P6-转刀-唔系滴西1080X1920——20260209-Star-Jevan-U.png"></video>
+                        <div class="case-play-hint"><span class="play-icon">▶</span> 点击播放完整视频</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 关于我 -->
+    <section id="about" class="section about">
+        <div class="section-header" data-en="PROFILE">
+            <span class="section-num">03 / 关于我</span>
+            <h2 class="section-title">关于<span class="highlight">我</span></h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="about-content">
+            <div class="about-right">
+                <h3 class="about-subtitle">视频设计师 · 游戏买量广告方向</h3>
+
+                <ul class="about-highlights">
+                    <li><strong>📌 全流程出片</strong> — Unity / UE5 引擎独立完成脚本创意 → 引擎录制 → 动捕 → 剪辑特效 → 成片输出；77+ 条 SLG 买量素材</li>
+                    <li><strong>📌 爆款差异化</strong> — 拆解竞品爆款逻辑，结合产品特色调整美术风格、重构场景、替换概念，强化素材竞争力</li>
+                    <li><strong>📌 数据驱动迭代</strong> — 依据内部测试数据与投放反馈持续更新，绩效排名中心前 30%，多条爆款曝光 > 1000 万</li>
+                    <li><strong>📌 AI 与新玩法</strong> — AI 视频制作 + AI 辅助设计；开发自动化脚本团队复用；Cocos 引擎制作可玩广告</li>
+                </ul>
+
+                <div class="about-info">
+                    <div class="info-item">
+                        <span class="info-label">姓名</span>
+                        <span class="info-value">姚泽兴</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">出生年月</span>
+                        <span class="info-value">2001.09（25 岁）</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">学历 / 专业</span>
+                        <span class="info-value">本科 · 动画</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">毕业院校</span>
+                        <span class="info-value">厦门大学嘉庚学院</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">意向城市</span>
+                        <span class="info-value">广东 · 深圳</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">求职类型</span>
+                        <span class="info-value status-available"><span class="dot"></span>社招 · 积极求职中</span>
+                    </div>
+                </div>
+                <a href="resume-yao-zexing.pdf" download class="btn btn-outline" id="download-resume">
+                    <span>下载简历 PDF</span>
+                    <span class="btn-icon">↓</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 专业技能 -->
+    <section id="skills" class="section skills">
+        <div class="section-header" data-en="SKILLS">
+            <span class="section-num">04 / 专业技能</span>
+            <h2 class="section-title">专业<span class="highlight">技能</span></h2>
+            <div class="section-line"></div>
+        </div>
+
+        <div class="skills-container">
+            <!-- 软件工具 -->
+            <div class="skill-category">
+                <h3 class="skill-cat-title">
+                    <span class="cat-icon">🛠</span>
+                    软件工具
+                </h3>
+                <div class="skill-list">
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">Unity 3D（主力出片引擎）</span>
+                            <span class="skill-percent">92%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="92"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">Adobe After Effects</span>
+                            <span class="skill-percent">90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="90"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">Unreal Engine 5</span>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="85"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">Blender</span>
+                            <span class="skill-percent">80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="80"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">Cocos（可玩广告）</span>
+                            <span class="skill-percent">78%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="78"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 专业能力 -->
+            <div class="skill-category">
+                <h3 class="skill-cat-title">
+                    <span class="cat-icon">🎯</span>
+                    专业能力
+                </h3>
+                <div class="skill-grid">
+                    <div class="ability-card">
+                        <div class="ability-icon">🎮</div>
+                        <h4>SLG 买量全流程</h4>
+                        <p>脚本创意、引擎录制、剪辑特效到成片输出独立完成，累计产出 77+ 条素材</p>
+                    </div>
+                    <div class="ability-card">
+                        <div class="ability-icon">💡</div>
+                        <h4>爆款创意分析</h4>
+                        <p>结合产品特色与用户心理拆解竞品爆款逻辑，打磨噱头、节奏与动画细节</p>
+                    </div>
+                    <div class="ability-card">
+                        <div class="ability-icon">🤖</div>
+                        <h4>AI 视频与自动化</h4>
+                        <p>AI 视频制作与 AI 辅助设计；开发自动化脚本供团队复用，降低重复成本</p>
+                    </div>
+                    <div class="ability-card">
+                        <div class="ability-icon">🕹</div>
+                        <h4>Cocos 可玩广告</h4>
+                        <p>使用 Cocos 引擎制作轻量交互类可玩广告素材，提升投放互动率</p>
+                    </div>
+                    <div class="ability-card">
+                        <div class="ability-icon">🎥</div>
+                        <h4>动捕 / 三维制作</h4>
+                        <p>数字人动作捕捉采集与 UE 动作调试，具备角色动作、场景地编能力</p>
+                    </div>
+                    <div class="ability-card">
+                        <div class="ability-icon">📊</div>
+                        <h4>数据驱动迭代</h4>
+                        <p>依据投放反馈与内部测试数据持续迭代，绩效排名中心前 30%</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 工作经历 -->
+    <section id="experience" class="section experience">
+        <div class="section-header" data-en="EXPERIENCE">
+            <span class="section-num">05 / 工作经历</span>
+            <h2 class="section-title">工作<span class="highlight">经历</span></h2>
+            <div class="section-line"></div>
+        </div>
+
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-header">
+                        <span class="timeline-date">2024.07 - 2026.07</span>
+                        <span class="timeline-type">全职</span>
+                    </div>
+                    <h3 class="timeline-role">视频后期岗 · Unity3D（出海 SLG 手游）</h3>
+                    <h4 class="timeline-company">深圳市乐易网络股份有限公司</h4>
+                    <div class="work-tags" style="margin-bottom:14px">
+                        <span class="tag">Unity</span>
+                        <span class="tag">AE</span>
+                        <span class="tag">AI 视频</span>
+                        <span class="tag">Cocos</span>
+                    </div>
+                    <ul class="timeline-desc">
+                        <li><strong>视频制作：</strong>负责买量广告素材制作，累计输出 77+ 条广告素材（主要使用 Unity，部分使用 AI 制作）</li>
+                        <li><strong>创意设计：</strong>结合产品特色与用户心理，分析竞品爆款逻辑做差异化设计；打磨视频噱头、整体节奏、动画细节，并根据投放反馈持续迭代</li>
+                        <li><strong>可玩广告：</strong>使用 Cocos 引擎制作可玩广告，实现轻量交互类广告素材</li>
+                        <li><strong>业绩：</strong>绩效排名中心前 30%，多条爆款视频预估曝光量 &gt;10M</li>
+                        <li>基于 AI 辅助开发自动化脚本，供团队多人复用，显著降低重复操作成本</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-header">
+                        <span class="timeline-date">2023.06 - 2024.04</span>
+                        <span class="timeline-type">实习</span>
+                    </div>
+                    <h3 class="timeline-role">实习生 · 动捕 / UE5</h3>
+                    <h4 class="timeline-company">咪咕新空文化科技（厦门）有限公司</h4>
+                    <div class="work-tags" style="margin-bottom:14px">
+                        <span class="tag">UE5</span>
+                        <span class="tag">动作捕捉</span>
+                        <span class="tag">数字人</span>
+                        <span class="tag">视频制作</span>
+                    </div>
+                    <ul class="timeline-desc">
+                        <li><strong>数字人动捕：</strong>参与《数智人》及《遇见闪亮的自己》项目，负责数字人动作捕捉采集、在 UE 中调试动作并导出</li>
+                        <li><strong>视频与直播：</strong>负责 B 站 IP「Tacitly_麟犀」的视频制作及直播辅助</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-header">
+                        <span class="timeline-date">2020.09 - 2024.07</span>
+                        <span class="timeline-type">本科</span>
+                    </div>
+                    <h3 class="timeline-role">动画专业 · 本科</h3>
+                    <h4 class="timeline-company">厦门大学嘉庚学院</h4>
+                    <ul class="timeline-desc">
+                        <li>MiXAR 虚拟媒体艺术实验室（Epic 校企合作实验室）成员，2021.09 - 2023.06</li>
+                        <li>团队制作 Rogue-like 游戏《精灵世界》（UE5）：负责 UE5 中制作宣传视频、角色设计与角色动作、草地/雪景等场景地编</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系方式 -->
+    <section id="contact" class="section contact">
+        <div class="section-header" data-en="CONTACT">
+            <span class="section-num">06 / 联系我</span>
+            <h2 class="section-title">联系<span class="highlight">我</span></h2>
+            <div class="section-line"></div>
+        </div>
+
+        <div class="contact-container">
+            <div class="contact-left">
+                <h3 class="contact-title">期待与你合作</h3>
+                <div class="contact-list">
+                    <div class="contact-item" role="button" tabindex="0" data-copy="15960693510">
+                        <div class="contact-icon">
+                            <span>📱</span>
+                        </div>
+                        <div class="contact-info">
+                            <span class="contact-label">电话 / 微信</span>
+                            <span class="contact-value">159-6069-3510</span>
+                        </div>
+                        <span class="copy-hint">点击复制</span>
+                    </div>
+                    <div class="contact-item" role="button" tabindex="0" data-copy="2869107526@qq.com">
+                        <div class="contact-icon">
+                            <span>📧</span>
+                        </div>
+                        <div class="contact-info">
+                            <span class="contact-label">电子邮箱 / QQ 邮箱</span>
+                            <span class="contact-value">2869107526@qq.com</span>
+                        </div>
+                        <span class="copy-hint">点击复制</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <span class="logo-icon">◆</span>
+                <span>姚泽兴 · 作品集</span>
+            </div>
+            <p class="footer-text">© 2026 姚泽兴 · 游戏买量视频 / 动画设计师 · 个人作品集，保留所有权利</p>
+            <p class="footer-subtext">电话/微信 159-6069-3510 · 2869107526@qq.com · 广东深圳</p>
+        </div>
+    </footer>
+
+    <!-- 回到顶部 -->
+    <button id="back-to-top" class="back-to-top" title="回到顶部">
+        <span>↑</span>
+    </button>
+
+    <script src="app.js?v=11"></script>
+</body>
+</html>
